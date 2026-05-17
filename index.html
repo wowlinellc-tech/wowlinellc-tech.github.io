@@ -17,15 +17,14 @@
             justify-content: space-between;
         }
         .logo { display: flex; align-items: center; gap: 15px; }
-        .logo-icon {
-            width: 60px; height: 60px;
-            background: #f0a500;
-            border-radius: 12px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 28px;
-        }
+        .logo img { height: 55px; width: auto; }
         .logo-text h1 { font-size: 28px; font-weight: 700; }
         .logo-text p { font-size: 14px; opacity: 0.85; }
+        .hero-logo {
+            display: block; margin: 0 auto 30px;
+            max-width: 320px; width: 80%;
+            filter: drop-shadow(0 4px 15px rgba(0,0,0,0.4));
+        }
         
         nav a {
             color: white; text-decoration: none;
@@ -99,7 +98,7 @@
 
 <header>
     <div class="logo">
-        <div class="logo-icon">🏠</div>
+        <img src="logo.png" alt="Wowline LLC" style="height:55px;width:auto;">
         <div class="logo-text">
             <h1>Wowline LLC</h1>
             <p>Home Renovation & Repair</p>
@@ -114,6 +113,7 @@
 </header>
 
 <section class="hero">
+    <img src="logo.png" alt="Wowline LLC" class="hero-logo">
     <h2>Transform Your Home<br>With Wowline LLC</h2>
     <p>Professional renovation & repair services in Clearwater, FL</p>
     <a href="#contact" class="btn">Get a Free Estimate</a>
