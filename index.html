@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wowline LLC - Home Renovation & Repair | Clearwater, FL</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; }
+        
+        header {
+            background: linear-gradient(135deg, #1a3a5c, #2d6a9f);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo { display: flex; align-items: center; gap: 15px; }
+        .logo-icon {
+            width: 60px; height: 60px;
+            background: #f0a500;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px;
+        }
+        .logo-text h1 { font-size: 28px; font-weight: 700; }
+        .logo-text p { font-size: 14px; opacity: 0.85; }
+        
+        nav a {
+            color: white; text-decoration: none;
+            margin-left: 25px; font-size: 15px;
+            opacity: 0.9;
+        }
+        nav a:hover { opacity: 1; text-decoration: underline; }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400') center/cover;
+            color: white; text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 { font-size: 46px; margin-bottom: 20px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+        .hero p { font-size: 20px; margin-bottom: 35px; opacity: 0.9; }
+        .btn {
+            background: #f0a500; color: #fff;
+            padding: 14px 36px; border-radius: 6px;
+            text-decoration: none; font-size: 17px;
+            font-weight: 600; display: inline-block;
+        }
+        .btn:hover { background: #d48f00; }
+        
+        .services {
+            padding: 70px 40px; text-align: center;
+            background: #f9f9f9;
+        }
+        .services h2 { font-size: 34px; margin-bottom: 10px; color: #1a3a5c; }
+        .services .subtitle { color: #666; margin-bottom: 50px; font-size: 16px; }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px; max-width: 1100px; margin: 0 auto;
+        }
+        .service-card {
+            background: white; border-radius: 10px;
+            padding: 30px 20px; box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+        .service-card .icon { font-size: 40px; margin-bottom: 15px; }
+        .service-card h3 { font-size: 18px; color: #1a3a5c; margin-bottom: 10px; }
+        .service-card p { color: #666; font-size: 14px; line-height: 1.6; }
+        
+        .about {
+            padding: 70px 40px;
+            max-width: 900px; margin: 0 auto;
+            text-align: center;
+        }
+        .about h2 { font-size: 34px; color: #1a3a5c; margin-bottom: 20px; }
+        .about p { font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 15px; }
+        
+        .contact {
+            background: #1a3a5c; color: white;
+            padding: 70px 40px; text-align: center;
+        }
+        .contact h2 { font-size: 34px; margin-bottom: 30px; }
+        .contact-info { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; }
+        .contact-item { font-size: 18px; }
+        .contact-item span { display: block; font-size: 14px; opacity: 0.7; margin-bottom: 5px; }
+        .contact-item a { color: #f0a500; text-decoration: none; }
+        
+        footer {
+            background: #111; color: #aaa;
+            padding: 20px 40px; text-align: center;
+            font-size: 14px;
+        }
+        footer a { color: #f0a500; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-icon">🏠</div>
+        <div class="logo-text">
+            <h1>Wowline LLC</h1>
+            <p>Home Renovation & Repair</p>
+        </div>
+    </div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Transform Your Home<br>With Wowline LLC</h2>
+    <p>Professional renovation & repair services in Clearwater, FL</p>
+    <a href="#contact" class="btn">Get a Free Estimate</a>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <p class="subtitle">Quality workmanship for every project, big or small</p>
+    <div class="service-grid">
+        <div class="service-card">
+            <div class="icon">🔨</div>
+            <h3>Home Remodeling</h3>
+            <p>Full interior remodels including kitchens, bathrooms, and living spaces.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🪟</div>
+            <h3>Drywall & Repairs</h3>
+            <p>Drywall installation, patching, and repairs done right the first time.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🏗️</div>
+            <h3>General Contractor</h3>
+            <p>Full project management from planning to completion for single family homes and condos.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🔧</div>
+            <h3>Plumbing & Fixtures</h3>
+            <p>Installation and repair of plumbing fixtures, faucets, and water systems.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🎨</div>
+            <h3>Flooring & Tiling</h3>
+            <p>Tile, hardwood, laminate, and vinyl flooring installation and repair.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">📋</div>
+            <h3>Permits & Plans</h3>
+            <p>We handle all permits and planning to keep your project on track and compliant.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Wowline LLC</h2>
+    <p>Wowline LLC is a licensed home renovation and repair company based in Clearwater, Florida. We specialize in single family homes and condos, delivering professional results with attention to detail on every project.</p>
+    <p>Our team is committed to quality workmanship, transparent communication, and on-time delivery. From small repairs to full-scale renovations, we treat every home as if it were our own.</p>
+    <p><strong>Licensed & Insured | Serving Clearwater, FL and surrounding areas</strong></p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <span>Phone</span>
+            <a href="tel:+17276558777">(727) 655-8777</a>
+        </div>
+        <div class="contact-item">
+            <span>Email</span>
+            <a href="mailto:wowlinellc@gmail.com">wowlinellc@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <span>Location</span>
+            Clearwater, FL
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Wowline LLC. All rights reserved. |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
